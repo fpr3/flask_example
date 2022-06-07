@@ -39,7 +39,7 @@ jobs:
       - name: Run image
         uses: abatilo/actions-poetry@v2.0.0
         with:
-          poetry-version: ${{ matrix-poetry-version }}
+          poetry-version: ${{ matrix.poetry-version }}
       - name: Install dependencies
         run: poetry install
       - name: Run black
