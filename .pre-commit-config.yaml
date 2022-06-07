@@ -1,5 +1,9 @@
 repos:
--   repo: https://gitlab.com/PyCQA/flake8
+  - repo: https://gitlab.com/PyCQA/flake8
     rev: 4.0.1
     hooks:
-    -   id: flake8
+      - id: flake8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "" # Use the sha / tag you want to point at
+    hooks:
+      - id: mypy
